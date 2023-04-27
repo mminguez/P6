@@ -2,16 +2,32 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
+  margin: 0;
+  width: 100vw;
+  overflow-x: hidden;
+  
   color-scheme: light dark;
   color: #FF6060;
   background-color: #E5E5E5;
-
+  
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+.app-container {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  width: inherit;
+  flex-grow: 1;
+  padding-top: 68px;
 }
 
 a {

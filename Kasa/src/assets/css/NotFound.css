@@ -4,7 +4,7 @@
     text-align: center;
     flex-direction: column;
     height: calc(100% - 68px - 30%);
-    margin-top: 30%;
+    margin-top: 10%;
 }
 
 .not-found-content h1 {
