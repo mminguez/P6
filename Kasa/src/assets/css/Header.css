@@ -1,0 +1,48 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    height: 68px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 68px;
+    width: auto;
+    transition: height 0.3s ease;
+}
+@media (max-width: 768px) {
+    .logo {
+      height: 47px;
+    }
+    .header {
+        height: 47px;
+    }
+  }
+
+.nav {
+    display: flex;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #FF6060;
+    margin-left: 1rem;
+}
+
+.nav-link:active {
+    text-decoration: underline;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}

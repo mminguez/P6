@@ -1,0 +1,32 @@
+.not-found-content {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    height: calc(100% - 68px - 30%);
+    margin-top: 30%;
+}
+
+.not-found-content h1 {
+    font-weight: 700;
+    font-size: 288px;
+    display: flex;
+    margin: 0px;
+}
+
+.not-found-content h2 {
+    margin-bottom: 20vh;
+}
+
+.go-home, .go-home:hover {
+    text-decoration: underline;
+    color: #FF6060;
+}
+
+
+@media (max-width: 768px) {
+    .not-found-content h1 {
+        font-size: 96px;
+        
+    }
+  }
