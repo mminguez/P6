@@ -27,6 +27,6 @@
 @media (max-width: 768px) {
     .not-found-content h1 {
         font-size: 96px;
-        
+        margin-top: calc(50vh - 288px);
     }
   }
