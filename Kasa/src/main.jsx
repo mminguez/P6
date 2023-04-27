@@ -5,7 +5,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import App from './App.jsx'
-import Home from './routes/Home';
+import Home from './routes/Hero';
 import About from './routes/About';
 import Fiche from './routes/Fiche';
 import NotFound from './routes/NotFound';

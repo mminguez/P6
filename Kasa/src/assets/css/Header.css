@@ -20,14 +20,16 @@
     width: auto;
     transition: height 0.3s ease;
 }
+
 @media (max-width: 768px) {
     .logo {
-      height: 47px;
+        height: 47px;
     }
+
     .header {
         height: 47px;
     }
-  }
+}
 
 .nav {
     display: flex;
