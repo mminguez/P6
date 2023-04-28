@@ -2,6 +2,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: white;
+    position: relative;
+    text-align: center;
 }
 
 .hero-banner {
@@ -14,6 +17,16 @@
     filter: brightness(60%);
     margin-bottom: 2.5vh;
     transition: height 0.3s ease;
+}
+
+.hero-container h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0px;
+    font-weight: 500;
+    font-size: 48px;
 }
 
 @media (max-width: 768px) {

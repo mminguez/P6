@@ -72,7 +72,7 @@ button:focus-visible {
 
 @media (max-width: 768px) {
   :root {
-      font-size: smaller;  
+    font-size: smaller;  
   }
   .main-content {
     padding: 16vh 5vw 0vh 5vw;
