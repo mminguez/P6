@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate  } from 'react-router-dom';
 import Collapsible from '../components/Collapsible';
 import '../assets/css/Fiche.css';
 import arrow_left from '../assets/arrow_left.svg'
@@ -9,6 +9,7 @@ import arrow_right from '../assets/arrow_right.svg'
 
 function Fiche() {
   const { id } = useParams();
+  const navigate = useNavigate();
   const [element, setElement] = useState(null);
   const [imageIndex, setImageIndex] = useState(0);
 
@@ -17,16 +18,22 @@ function Fiche() {
       const response = await fetch('/logements.json');
       const data = await response.json();
       const foundElement = data.find((el) => el.id === id);
-      setElement(foundElement);
+
+      if (!foundElement) {
+        navigate('/404');
+      } else {
+        setElement(foundElement);
+      }
     };
 
     fetchElement();
-  }, [id]);
+  }, [id, navigate]);
 
   if (!element) {
     return <div>Loading...</div>;
   }
 
+  
   const handlePrevImage = () => {
     setImageIndex((prevIndex) => (prevIndex - 1 + element.pictures.length) % element.pictures.length);
   };

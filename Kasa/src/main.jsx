@@ -13,11 +13,11 @@ import './index.css'
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "*",
     element: <App />,
     children: [
       {
-        path: "/",
+        path: "home/",
         element: <Home />,
       },
       {
