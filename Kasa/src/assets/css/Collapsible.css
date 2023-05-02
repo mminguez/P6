@@ -1,0 +1,29 @@
+.collapsible {
+    padding-bottom: 2.5vh;
+  }
+  
+  .collapsible-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    cursor: pointer;
+    background-color: #FF6060;
+    color: white;
+    user-select: none;
+    border-radius: 5px;
+  }
+  
+  .collapsible-header.active .arrow {
+    transform: rotate(180deg);
+  }
+  
+  .arrow {
+    transition: transform 0.3s ease;
+  }
+  
+  .collapsible-content {
+    padding: 1rem;
+    background-color: #F7F7F7;
+  }
+  

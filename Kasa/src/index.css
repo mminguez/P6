@@ -9,7 +9,6 @@
   color-scheme: light dark;
   color: #FF6060;
   background-color: #E5E5E5;
-  
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -49,6 +48,7 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  font-weight: 500;
 }
 
 button {
@@ -58,12 +58,8 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
 }
 button:focus,
 button:focus-visible {

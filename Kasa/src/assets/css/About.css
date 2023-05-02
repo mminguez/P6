@@ -39,8 +39,9 @@
     transform: rotate(180deg);
 }
 
-.arrow {
+.tab-header .arrow {
     transition: transform 0.3s ease;
+    position: initial;
 }
 
 .tab-content {

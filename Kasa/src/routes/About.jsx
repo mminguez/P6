@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import '../assets/css/About.css';
 import banner from '../assets/images/kalen-emsley-Bkci_8qcdvQ-unsplash2.webp'
-import arrow from '../assets/arrow.svg'
+import Collapsible from '../components/Collapsible';
+
 
 
 function About() {
@@ -31,18 +32,7 @@ function About() {
       />
       <div className="tabs-container">
         {tabs.map((tab, index) => (
-          <div key={index} className="tab">
-            <div
-              className={`tab-header ${activeTabs[index] ? 'active' : ''}`}
-              onClick={() => toggleTab(index)}
-            >
-              {tab.title}
-              <img src={arrow} alt="\/" className="arrow"/>
-            </div>
-            {activeTabs[index] && (
-              <div className="tab-content">{tab.content}</div>
-            )}
-          </div>
+          <Collapsible key={index} title={tab.title} content={tab.content} />
         ))}
       </div>
     </div>
