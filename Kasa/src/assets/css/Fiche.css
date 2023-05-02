@@ -108,6 +108,7 @@
     align-items: left;
     flex-direction: column;
     margin-bottom: 1rem;
+    max-width: 50vw;
 }
 
 .info-host{
